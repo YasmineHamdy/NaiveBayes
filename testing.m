@@ -1,7 +1,7 @@
 image= importdata('image.txt');
-data=image(:,2:4);
+data=image(:,1:3);
 img=imread('apple.jpg');
-output=image(:,5);
+output=image(:,4);
 net=NaiveBayes.fit(data,output);
 C1 = net.predict(data);
 cMat1 = confusionmat(output,C1) ;
