@@ -1,5 +1,4 @@
 function [m,num] =mean(data,classes,output)
-class=output(1,1);
 feature=size(data,2);
 sets=size(data,1);
 m=zeros(classes,feature);
@@ -15,7 +14,5 @@ for i=1:feature
 end
 
          m= m./num;
-     
-
-end
+     end
     
